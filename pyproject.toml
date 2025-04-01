@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbody"
+version = "0.1.0"
+description = "An N-body simulation program optimized with numba."
+readme = "README.md"
+requires-python = ">=3.6"
+license = "GPL-3.0-or-later"
+authors = [
+    { name = "Leonardo Pagliaro", email = "leonardo.pagliaro@phd.unipd.it" }
+]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "numba",
+    "tqdm"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["nbody*"]
+namespaces = false
+
+[project.scripts]
+nbody = "nbody:main"

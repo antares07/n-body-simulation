@@ -1,0 +1,6 @@
+config:
+ method: leapfrog
+ initial_conditions_file: /home/leo/ComputationalAstrophysics/mcluster/test3.txt
+ integration_time: 100000 # In relaxation time units
+ n_steps: 100000
+ output_path: /home/leo/ComputationalAstrophysics/
