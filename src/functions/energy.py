@@ -19,7 +19,7 @@ def compute_total_energy(G, r, v, m, softening=1e-2):
 
             diff = r[i] - r[j]
             dist = np.linalg.norm(diff) + softening
-            tmp += G * m[i] * m[j] / dist ** 3
+            tmp += G * m[i] * m[j] / dist
 
         potential_arr[i] = tmp
         
