@@ -23,8 +23,8 @@ Make sure you have **Python 3.8+** installed. You also need the following depend
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/nbody-simulation.git
-   cd nbody-simulation
+   git clone https://github.com/antares07/n-body-simulation.git
+   cd n-body-simulation
    ```
 
 2. Install the package:
